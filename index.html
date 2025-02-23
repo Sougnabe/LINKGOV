@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1>WELCOME TO LINKGOV</h1>
+        </section>
+        <section class="nav">
+            <label for="searchheader">search</label>
+            <input type="text" id="searchheader">
+            <h4>Home</h1>
+                <h4>About</h1>
+                    <h4>Account</h3>
+        </section>
+    </header>
+
+    <section id="sort">
+        <div>
+            <label for="areas">choose an area</label>
+            <select name="areas" id="selectareas">
+                <option value="area1">area1</option>
+                <option value="area2">area2</option>
+                <option value="area3">area3</option>
+                <option value="area4">area4</option>
+                <option value="areas">all areas</option>
+            </select>
+        </div>
+        <div>
+            <label for="search">search</label>
+            <input type="text" id="search">
+        </div>
+    </section>
+
+    <main>
+        <section id="mainright">
+            <div id="mainright1">comments</div>
+            <div id="mainright2" class="sidenav">comments public</div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function openNav() {
+            const sidenav = document.getElementsByClassName("sidenav")
+            sidenav.addEventListener("click", function () {
+                sidenav.style.width = "200px";
+            }
+        }
+        function closeNav() {
+            document.getElementsByClassName("sidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>

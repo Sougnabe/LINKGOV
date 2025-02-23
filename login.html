@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="logsigup.css">
+</head>
+
+<body>
+    <div>
+        <h1 id="title">Welcome to LinkGov</h1>
+    </div>
+    <div id="login-container">
+        <h1 id="login-title">Login</h1>
+        <form id="login-form">
+            <div id="username-container">
+            <label for="username">Username:</label>
+            <select name="username" id="username" required onchange="verifierSelection()">
+                <option value="area">area1</option>
+                <option value="area">area2</option>
+                <option value="area">area3</option>
+                <option value="area">area4</option>
+                <option value="user">user</option>
+            </select>
+            </div>
+            <br>
+            <div id="user-input-container" style="display: none;">
+                <label for="user-input">User</label>
+                <input type="text" id="user-input" name="user-input">
+            </div>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message"></p>
+        <p>Don't have an account? <a href="sign-up.html">Sign up</a></p>
+    </div>
+
+    <script>
+        function verifierSelection() {
+            const selection = document.getElementById("username").value;
+            
+           
+            const userInputContainer = document.getElementById("user-input-container");
+            const userInput = document.getElementById("username-container");
+            
+            if (selection === "user") {
+                userInputContainer.style.display = "block";
+                userInput.style.display = "none";
+            } else {
+                userInputContainer.style.display = "none";
+                userInput.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

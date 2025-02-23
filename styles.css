@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #29c92b;
+}
+
+header {
+    display: flex;
+    background-color: #29c92b;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    flex: 1;
+    text-align: center 
+}
+
+.nav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    gap: 10px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#mainleft {
+    flex: 1;
+    text-align: center;
+}
+
+#mainright {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#mainright1, #mainright2 {
+    flex: 1;
+    text-align: center;
+}
+
+input {
+    margin: 3px 0;
+    padding: 1%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 150px;
+    text-align: center;
+}
+
+label {
+    text-align: center;
+}
+
+#selectareas {
+    margin: 3px 0;
+    padding: 1%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 500px;
+    text-align: center;
+}
+
+#sort {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
